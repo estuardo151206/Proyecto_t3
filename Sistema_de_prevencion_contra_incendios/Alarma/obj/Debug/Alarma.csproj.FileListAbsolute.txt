@@ -1,0 +1,6 @@
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\bin\Debug\Alarma.dll
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\bin\Debug\Alarma.pdb
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\obj\Debug\Alarma.csproj.AssemblyReference.cache
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\obj\Debug\Alarma.csproj.CoreCompileInputs.cache
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\obj\Debug\Alarma.dll
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Alarma\obj\Debug\Alarma.pdb

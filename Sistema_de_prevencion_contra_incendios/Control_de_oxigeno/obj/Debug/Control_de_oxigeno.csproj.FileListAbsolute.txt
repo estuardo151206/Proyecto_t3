@@ -1,0 +1,6 @@
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\bin\Debug\Control_de_oxigeno.dll
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\bin\Debug\Control_de_oxigeno.pdb
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\obj\Debug\Control_de_oxigeno.csproj.AssemblyReference.cache
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\obj\Debug\Control_de_oxigeno.csproj.CoreCompileInputs.cache
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\obj\Debug\Control_de_oxigeno.dll
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Control_de_oxigeno\obj\Debug\Control_de_oxigeno.pdb
