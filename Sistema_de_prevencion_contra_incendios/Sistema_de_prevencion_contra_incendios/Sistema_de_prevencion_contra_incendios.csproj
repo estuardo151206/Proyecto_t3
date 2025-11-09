@@ -53,6 +53,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Alarmas\Alarmas.csproj">
+      <Project>{217cdb2c-c0d4-4811-be80-756684949585}</Project>
+      <Name>Alarmas</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
       <Project>{90ede8bb-10e3-405e-bfc6-4b0dde6e13ae}</Project>
       <Name>ClassLibrary1</Name>

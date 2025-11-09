@@ -5,30 +5,69 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Control_de_oxigeno
+namespace Control_de_estaciones
 {
     public class Medidor
     {
-        private int o;
-        public Medidor(int pA, ref int pS, ref int pC)
+        private int t, o, p;
+        public Medidor(ref int pP, ref int pC, ref int pR)
         {
-            o = pA;
-            if (o <= 83)
+            Random rnd = new Random();
+            t = rnd.Next(23, 75);
+            o = rnd.Next(80, 101);
+            p = pP;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("Piso " + p + ":");
+            if (t <= 63)
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Normal " + o + "%");
                 Console.ResetColor();
-                Thread.Sleep(750);
+                Console.Write("Temperatura ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Normal " + t + "°");
+                Console.ResetColor();
+                if (o >= 83)
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Normal " + o + "%");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("Bajo " + o + "%");
+                    Console.ResetColor();
+                }
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("Precacucion " + o + "%");
                 Console.ResetColor();
-                Thread.Sleep(750);
-                pS = 2;
-                pC = 1;
-            }
+                Console.Write("Temperatura ");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("Alta " + t + "°");
+                Console.ResetColor();
+                if (o >= 83)
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Normal " + o + "%");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("Bajo " + o + "%");
+                    Console.ResetColor();
+                    pC = 1;
+                    pR = 0;
+                }
+            }     
         }
     }
 }

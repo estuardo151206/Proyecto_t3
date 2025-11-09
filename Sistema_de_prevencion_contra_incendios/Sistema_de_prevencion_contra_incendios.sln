@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control_de_oxigeno", "Control_de_oxigeno\Control_de_oxigeno.csproj", "{A210A91B-9595-4D16-BD42-9476F980C3C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarmas", "Alarmas\Alarmas.csproj", "{217CDB2C-C0D4-4811-BE80-756684949585}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A210A91B-9595-4D16-BD42-9476F980C3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A210A91B-9595-4D16-BD42-9476F980C3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A210A91B-9595-4D16-BD42-9476F980C3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217CDB2C-C0D4-4811-BE80-756684949585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217CDB2C-C0D4-4811-BE80-756684949585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217CDB2C-C0D4-4811-BE80-756684949585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217CDB2C-C0D4-4811-BE80-756684949585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

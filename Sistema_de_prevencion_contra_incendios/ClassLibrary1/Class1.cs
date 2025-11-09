@@ -10,25 +10,61 @@ namespace Funcionamiento
 {
     public class Detector
     {
-        private int d;
-        public Detector(int pA,ref int pS, ref int pC)
+        private int t, o;
+        public Detector(int pT, int pO, int pN, ref int pC, ref int pR, ref int pP)
         {
-            d = pA;
-            if (d <= 63)  
+            t = pT;
+            o = pO;
+            if (t <= 63)
             {
+                Console.ResetColor();
+                Console.Write("Temperatura ");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Normal " + d + "°");
+                Console.WriteLine("Normal " + t + "°");
                 Console.ResetColor();
-                Thread.Sleep(750);
+                if (o >= 83) 
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Normal " + o + "%");
+                    Console.ResetColor();
+                }
+                else 
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("Bajo " + o + "%");
+                    Console.ResetColor();
+                }
             }
-            else 
+            else
             {
-                Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("Precacucion " + d + "°");
                 Console.ResetColor();
-                Thread.Sleep(750);
-                pS = 1;
-                pC = 1;
+                Console.Write("Temperatura ");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("Alta " + t + "°");
+                Console.ResetColor();
+                if (o >= 83)
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Normal " + o + "%");
+                    Console.ResetColor();
+                }
+                else 
+                {
+                    Console.ResetColor();
+                    Console.Write("Oxigeno ");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("Bajo " + o + "%");
+                    Console.ResetColor();
+                    pC = 1;
+                    pR = 0;
+                    pP = pN;
+                }
             }
         }
     }

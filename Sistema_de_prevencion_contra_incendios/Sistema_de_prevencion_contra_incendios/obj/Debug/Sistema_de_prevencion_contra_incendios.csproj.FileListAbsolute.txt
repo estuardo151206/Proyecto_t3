@@ -11,3 +11,5 @@ C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_pr
 C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_prevencion_contra_incendios\obj\Debug\Sistema_.9333CD40.Up2Date
 C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_prevencion_contra_incendios\bin\Debug\Control_de_oxigeno.dll
 C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_prevencion_contra_incendios\bin\Debug\Control_de_oxigeno.pdb
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_prevencion_contra_incendios\bin\Debug\Alarmas.dll
+C:\Users\Estua\source\repos\Sistema_de_prevencion_contra_incendios\Sistema_de_prevencion_contra_incendios\bin\Debug\Alarmas.pdb
