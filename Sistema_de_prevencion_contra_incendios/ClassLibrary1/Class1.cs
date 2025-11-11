@@ -22,7 +22,7 @@ namespace Funcionamiento
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Normal " + t + "°");
                 Console.ResetColor();
-                if (o >= 83) 
+                if (o <= 21) 
                 {
                     Console.ResetColor();
                     Console.Write("Oxigeno ");
@@ -35,7 +35,7 @@ namespace Funcionamiento
                     Console.ResetColor();
                     Console.Write("Oxigeno ");
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("Bajo " + o + "%");
+                    Console.WriteLine("Alto " + o + "%");
                     Console.ResetColor();
                 }
             }
@@ -46,7 +46,7 @@ namespace Funcionamiento
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("Alta " + t + "°");
                 Console.ResetColor();
-                if (o >= 83)
+                if (o <= 21)
                 {
                     Console.ResetColor();
                     Console.Write("Oxigeno ");
@@ -59,7 +59,7 @@ namespace Funcionamiento
                     Console.ResetColor();
                     Console.Write("Oxigeno ");
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("Bajo " + o + "%");
+                    Console.WriteLine("Alto " + o + "%");
                     Console.ResetColor();
                     pC = 1;
                     pR = 0;
@@ -69,3 +69,4 @@ namespace Funcionamiento
         }
     }
 }
+
