@@ -15,27 +15,30 @@ namespace Alarmas
             e = pE;
             Console.Clear();
             for (int i = 0; i < 3; i++) 
-            { 
+            {
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("\r==ALERTA PELIGRO EN EL PISO " + e + " ==");
+                Console.Beep(2350,1500);
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("\rAlerta peligro en la estacion " + e);
-                Console.Beep(2350,1500);
-                Console.BackgroundColor = ConsoleColor.White;
-                Console.ForegroundColor= ConsoleColor.Red;
-                Console.Write("\rAlerta peligro en la estacion " + e);
+                Console.Write("\r==ALERTA PELIGRO EN EL PISO " + e + " ==");
                 Console.Beep(2350, 1500);
                 Console.ResetColor();
             }
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nLLamndo a los bomberos");
-            Thread.Sleep(250);
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
+            Console.Write("LLAMNDO A LOS BOMBEROS ");
+            Thread.Sleep(750);
             Console.Write("■");
-            Thread.Sleep(250);
+            Thread.Sleep(750);
             Console.Write("■");
-            Thread.Sleep(250);
+            Thread.Sleep(750);
             Console.Write("■");
-            Console.WriteLine("\nEvacuando pisos del 1 al 4");
+            Console.WriteLine("\nEVACUANDO PISOS DEL 1 AL 4");
+            Thread.Sleep(750);
+            Console.ResetColor();
         }
     }
 }

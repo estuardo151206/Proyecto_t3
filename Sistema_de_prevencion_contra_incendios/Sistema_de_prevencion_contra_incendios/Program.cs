@@ -106,19 +106,15 @@ namespace Sistema_de_prevencion_contra_incendios
         {
             int r = 1;
             Console.Clear();
-            Console.WriteLine("Seleccione el piso a revisar:");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("SELECCIONE EL PISO A REVISAR[1][2][3][4]");
             piso = int.Parse(Console.ReadLine());
+            Console.ResetColor();
             Console.Clear();
             Thread.Sleep(250);
             while (r == 1)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("============MONITOREO MANUAL============");
-                Console.ResetColor();
                 Medidor m = new Medidor(ref piso, ref control, ref r);
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("Para regrsar precione [1]: ");
-                Console.ResetColor();
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo tecla = Console.ReadKey(true);
