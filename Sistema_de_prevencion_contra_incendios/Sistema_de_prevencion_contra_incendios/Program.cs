@@ -52,7 +52,13 @@ namespace Sistema_de_prevencion_contra_incendios
             {
                 case 1: Tiempo_Real(ref control, ref piso); break;
                 case 2: Estaciones(ref piso, ref control); break;
+                defauld: 
+                    Console.WriteLine("OPCIÓN NO VÁLIDA");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    break;
             }
+        
         }
         static void Tiempo_Real( ref int control, ref int piso)
         {
@@ -67,10 +73,10 @@ namespace Sistema_de_prevencion_contra_incendios
                 t2 = rnd.Next(23, 75);
                 t3 = rnd.Next(23, 75);
                 t4 = rnd.Next(23, 75);
-                o1 = rnd.Next(80, 101);
-                o2 = rnd.Next(80, 101);
-                o3 = rnd.Next(80, 101);
-                o4 = rnd.Next(80, 101);
+                o1 = rnd.Next(15, 31);
+                o2 = rnd.Next(15, 31);
+                o3 = rnd.Next(15, 31);
+                o4 = rnd.Next(15, 31);
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("========MONITOREO EN TIEMPO REAL========");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -131,3 +137,4 @@ namespace Sistema_de_prevencion_contra_incendios
         }
     }
 }
+
