@@ -14,7 +14,7 @@ namespace Control_de_estaciones
         {
             Random rnd = new Random();
             t = rnd.Next(23, 75);
-            o = rnd.Next(80, 101);
+            o = rnd.Next(15, 31);
             p = pP;
             if (p < 5)
             {
@@ -30,7 +30,7 @@ namespace Control_de_estaciones
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Normal " + t + "°");
                     Console.ResetColor();
-                    if (o >= 83)
+                    if (o <= 21)
                     {
                         Console.ResetColor();
                         Console.Write("Oxigeno ");
@@ -43,7 +43,7 @@ namespace Control_de_estaciones
                         Console.ResetColor();
                         Console.Write("Oxigeno ");
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("Bajo " + o + "%");
+                        Console.WriteLine("Alto " + o + "%");
                         Console.ResetColor();
                     }
                 }
@@ -54,7 +54,7 @@ namespace Control_de_estaciones
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Alta " + t + "°");
                     Console.ResetColor();
-                    if (o >= 83)
+                    if (o <= 21)
                     {
                         Console.ResetColor();
                         Console.Write("Oxigeno ");
@@ -67,7 +67,7 @@ namespace Control_de_estaciones
                         Console.ResetColor();
                         Console.Write("Oxigeno ");
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("Bajo " + o + "%");
+                        Console.WriteLine("Alto " + o + "%");
                         Console.ResetColor();
                         pC = 1;
                         pR = 0;
@@ -87,3 +87,4 @@ namespace Control_de_estaciones
         }
     }
 }
+
