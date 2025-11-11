@@ -29,7 +29,7 @@ namespace Alarmas
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
-            Console.Write("LLAMNDO A LOS BOMBEROS ");
+            Console.Write("LLAMANDO A LOS BOMBEROS ");
             Thread.Sleep(750);
             Console.Write("■");
             Thread.Sleep(750);

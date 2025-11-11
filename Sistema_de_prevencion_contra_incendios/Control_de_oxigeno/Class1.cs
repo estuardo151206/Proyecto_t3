@@ -16,14 +16,14 @@ namespace Control_de_estaciones
             t = rnd.Next(23, 75);
             o = rnd.Next(80, 101);
             p = pP;
-            if (p <5)
+            if (p < 5)
             {
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("============MONITOREO MANUAL============");
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("Piso " + p + ":");
-                if (t <= 63)
+                if (t <= 57)
                 {
                     Console.ResetColor();
                     Console.Write("Temperatura ");

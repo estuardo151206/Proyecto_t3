@@ -97,7 +97,7 @@ namespace Sistema_de_prevencion_contra_incendios
                         break;
                     }
                 }
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
                 Console.Clear();
             }
             Console.Clear();

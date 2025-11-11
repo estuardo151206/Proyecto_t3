@@ -15,7 +15,7 @@ namespace Funcionamiento
         {
             t = pT;
             o = pO;
-            if (t <= 63)
+            if (t <= 57)
             {
                 Console.ResetColor();
                 Console.Write("Temperatura ");
